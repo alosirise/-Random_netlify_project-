@@ -1,0 +1,227 @@
+{
+    "Search": [
+        {
+            "Character_image0": "Grandblue_project/SSR_00.png",
+            "Character_image1": "Grandblue_project/SSR_01.png",
+            "Character_image2": "Grandblue_project/SSR_02.png",
+            "Rarity": "Grandblue_project/Rarity_SSR.png",
+            "Specialty": "Grandblue_project/staff.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "The fealty she once swore to the Erste Empire shattered when she learned the Empire's definition of justice. Already fit for battle, she wanders the world hidden behind a mask.",
+            "Gender":"Female",
+            "Name":"Clarisse"
+        
+        },
+        {
+            "Character_image0": "Grandblue_project/SSR_10.png",
+            "Character_image1": "Grandblue_project/SSR_11.png",
+            "Character_image2": "Grandblue_project/SSR_12.png",
+            "Rarity": "Grandblue_project/Rarity_SSR.png",
+            "Specialty": "Grandblue_project/spear.png",
+            "Style": "Grandblue_project/balanced.png",
+            "Detail": "His heart will always be by the shining sea of his home, but he hears the call of the great ocean that lies far beneath the clouds. His friends laugh at him for believing in such tales, but he longs to swim through those mythic waters.",
+            "Gender":"Female",
+            "Name":"Jeanne d'Arc"
+        },
+        {
+            "Character_image0": "Grandblue_project/SSR_20.png",
+            "Character_image1": "Grandblue_project/SSR_21.png",
+            "Character_image2": "Grandblue_project/SSR_22.png",
+            "Rarity": "Grandblue_project/Rarity_SSR.png",
+            "Specialty": "Grandblue_project/staff.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "This witch always wanted to chat, but no one would set foot in her dark, mysterious forest. So one day she became best friends with a giant stuffed animal.",
+            "Gender":"Female",
+            "Name":"Korwa"
+        },
+        {
+            "Character_image0": "Grandblue_project/SSR_30.png",
+            "Character_image1": "Grandblue_project/SSR_31.png",
+            "Character_image2": "Grandblue_project/SSR_32.png",
+            "Rarity": "Grandblue_project/Rarity_SSR.png",
+            "Specialty": "Grandblue_project/gun.png",
+            "Style": "Grandblue_project/balanced.png",
+            "Detail": "This military man declared himself a genius detective when he accidentally ran into a legendary thief. He's fit enough to chase anyone down, but his detective work is lacking- in fact, it's atrocious. Fortunately, he's got a sharp assistant by his side and energy to spare. Justice will be served!",
+            "Gender":"Female",
+            "Name":"Zooey"
+        
+        },
+        {
+            "Character_image0": "Grandblue_project/SSR_40.png",
+            "Character_image1": "Grandblue_project/SSR_41.png",
+            "Character_image2": "Grandblue_project/SSR_42.png",
+            "Rarity": "Grandblue_project/Rarity_SSR.png",
+            "Specialty": "Grandblue_project/sabre.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "Lamretta is a nun that loves to have a banquet, and she has made some new friends through her hobby. Lamretta lives her days like she's always in the middle of a feast.",
+            "Gender":"Female",
+            "Name":"Zooey (Grand)"
+        },
+        {
+            "Character_image0": "Grandblue_project/SSR_50.png",
+            "Character_image1": "Grandblue_project/SSR_51.png",
+            "Character_image2": "Grandblue_project/SSR_52.png",
+            "Rarity": "Grandblue_project/Rarity_SSR.png",
+            "Specialty": "Grandblue_project/spear.png",
+            "Style": "Grandblue_project/defense.png",
+            "Detail": "After a particularly fragrant helping of noodles, this gourmet was inspired to search far and wide for the ultimate bowl. Any who dare get in between him and his lunch is sure to meet a quick end.",
+            "Gender":"Male",
+            "Name":"Naoise (Summer)"
+
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_00.png",
+            "Character_image1": "Grandblue_project/SR_01.png",
+            "Character_image2": "Grandblue_project/SR_02.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/sabre.png",
+            "Style": "Grandblue_project/balanced.png",
+            "Detail": "Lover of freedom and all things cute, Chloe sets out on a journey to become strong enough to protect those important to her. Despite her flashy appearance and bold demeanor, her heart is as pure as the wide blue skies.",
+            "Gender":"Male",
+            "Name":"Elta"
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_10.png",
+            "Character_image1": "Grandblue_project/SR_11.png",
+            "Character_image2": "Grandblue_project/SR_12.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/harp.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "The dream that sprang from this pair's youthful hearts has matured within their tightly joined hands. As these two young men stand in the gap between past and future, they vow that their bond will remain strong no matter what lies in store for them.",
+            "Gender":"Male",
+            "Name":"Arthur"
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_20.png",
+            "Character_image1": "Grandblue_project/SR_21.png",
+            "Character_image2": "Grandblue_project/SR_22.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/sabre.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "Inspired by a song close to his heart, this minstrel brings music with him wherever he goes. His joyous melodies resound across the skies, serving as a beacon of light for those in their darkest hour.",
+            "Gender":"Female",
+            "Name":"Jeanne d'Arc"
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_30.png",
+            "Character_image1": "Grandblue_project/SR_31.png",
+            "Character_image2": "Grandblue_project/SR_32.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/katana.png",
+            "Style": "Grandblue_project/attack.png",
+            "Detail": "True to Orleans custom, this local maiden trains in the way of the sword. Though she does not yet know of the revelation to come, the purity in her heart shines bright with the hope to one day save all people.",
+            "Gender":"Female",
+            "Name":"Mirin"
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_40.png",
+            "Character_image1": "Grandblue_project/SR_41.png",
+            "Character_image2": "Grandblue_project/SR_42.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/staff.png",
+            "Style": "Grandblue_project/defense.png",
+            "Detail": "A girl born and raised on an island far to the east, she loves samurai culture. She leaves home to expand her horizons, leaving traces of her smile and unique swordplay wherever she wanders.",
+            "Gender":"Female",
+            "Name":"Pengy"
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_50.png",
+            "Character_image1": "Grandblue_project/SR_51.png",
+            "Character_image2": "Grandblue_project/SR_52.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/staff.png",
+            "Style": "Grandblue_project/attack.png",
+            "Detail": "Allies of justice don't go on summer vacation. Wherever evil lurks, the black tuxedo flightlessly flies into action. But even the often unseen pilot inside has been lured out by the summer rays... Just don't expect it every day.",
+            "Gender":"Female",
+            "Name":"Anna"
+        },
+        {
+            "Character_image0": "Grandblue_project/SR_60.png",
+            "Character_image1": "Grandblue_project/SR_61.png",
+            "Character_image2": "Grandblue_project/SR_62.png",
+            "Rarity": "Grandblue_project/Rarity_SR.png",
+            "Specialty": "Grandblue_project/melee.png",
+            "Style": "Grandblue_project/attack.png",
+            "Detail": "She graduated at the top of the 104th Training Corps and became part of the Survey Corps. Her aptitude for warfare and impressive combat skills are the equivalent of 100 normal soldiers.",
+            "Gender":"Female",
+            "Name":"Cailana "
+        },
+        {
+            "Character_image0": "Grandblue_project/R_00.png",
+            "Character_image1": "Grandblue_project/R_01.png",
+            "Character_image2": "Grandblue_project/R_02.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/sabre.png",
+            "Style": "Grandblue_project/balanced.png",
+            "Detail": "This lone street fighter spends his days in training. This way of life has captivated many other fighters, as has his strength. He came to the sky realm seeking mighty opponents, and there learned of the primal beasts.",
+            "Gender":"Female",
+            "Name":"Rosamia"
+        },
+        {
+            "Character_image0": "Grandblue_project/R_10.png",
+            "Character_image1": "Grandblue_project/R_11.png",
+            "Character_image2": "Grandblue_project/R_12.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/melee.png",
+            "Style": "Grandblue_project/balanced.png",
+            "Detail": "Although he appears to be a boy, he's really a man trapped in a small body. He uses his keen powers of observation and astute intuition to solve any mystery. Now he must face new mysteries only found in the sky realm.",
+            "Gender":"Female",   
+            "Name":"Tanya"
+        },
+        {
+            "Character_image0": "Grandblue_project/R_20.png",
+            "Character_image1": "Grandblue_project/R_21.png",
+            "Character_image2": "Grandblue_project/R_22.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/staff.png",
+            "Style": "Grandblue_project/attack.png",
+            "Detail": "The girl who had received a revelation senses the shadow of a great one from the small dragon that adorably flies about. The determination of this girl impassioned by her mission inspires her comrades, guiding the world and its people towards peace and harmony.",
+            "Gender":"Female",
+            "Name":"Anna"
+        },
+        {
+            "Character_image0": "Grandblue_project/R_30.png",
+            "Character_image1": "Grandblue_project/R_31.png",
+            "Character_image2": "Grandblue_project/R_32.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/gun.png",
+            "Style": "Grandblue_project/attack.png",
+            "Detail": "Marquiares long ago learned to listen to the stars, eventually throwing open the doors to the supernal: grand source of all wisdom. The process transformed him into a grand sage with the ability to draw limitless magical energy from beyond the stars.",
+            "Gender":"Male",
+            "Name":"Barawa"
+        },
+        {
+            "Character_image0": "Grandblue_project/R_40.png",
+            "Character_image1": "Grandblue_project/R_41.png",
+            "Character_image2": "Grandblue_project/R_42.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/staff.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "The world is in the midst of impending jeopardy—a disaster that only this arbitrator's true form can stop. But will her excessive empathy for the people interfere with her duty?",
+            "Gender":"Female",
+            "Name":"Lamretta"
+        },
+        {
+            "Character_image0": "Grandblue_project/R_50.png",
+            "Character_image1": "Grandblue_project/R_51.png",
+            "Character_image2": "Grandblue_project/R_52.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/melee.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "This young girl who keeps the balance in the skies descends upon the cerulean seas in a lovely swimsuit. She sets her responsibilities aside for a brief respite with dear friends.",
+            "Gender":"Male",
+            "Name":"Ippatsu"
+        },
+        {
+            "Character_image0": "Grandblue_project/R_60.png",
+            "Character_image1": "Grandblue_project/R_61.png",
+            "Character_image2": "Grandblue_project/R_62.png",
+            "Rarity": "Grandblue_project/Rarity_R.png",
+            "Specialty": "Grandblue_project/melee.png",
+            "Style": "Grandblue_project/special.png",
+            "Detail": "Although the crown prince and princess have given up the throne, Naoise still does what he can for the people of Irestill. ",
+            "Gender":"Female",
+            "Name":"Chloe"
+        }
+    ]
+}
