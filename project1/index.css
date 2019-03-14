@@ -100,12 +100,17 @@
             margin-right: auto;
             width: 90%;
           }
+
         .boxwhite{
-            background-color: rgba(252, 252, 252, 0.555);
-            border-color: rgb(255, 0, 0);
+            background-color: rgba(252, 252, 252, 0.555);        
             box-shadow: 9px 12px 25px rgba(17, 153, 216, 0.733);
-            padding : 0 px 35px;
           }
+
+        .boxexplain{            
+                background-color: rgba(252, 252, 252, 0.555);         
+                box-shadow: 0px 0px 25px 7px rgba(255, 0, 0, 0.733);
+               
+        }
         
         .gif {
             background-size: cover;
@@ -177,7 +182,7 @@
             }
 
              .boxwhite{
-                width: 75%;
+                width: 100%;
             }
 
              .crystalpic{
@@ -199,7 +204,10 @@
              .title{
                 text-align: center;
             }
-       
+             button{
+                  display:block;
+                  margin: auto;
+            }
         }
         
         .imgtable{
@@ -235,9 +243,11 @@
              font-size: 20px; 
           }
          
-         #datalist{
+         #datalist,#basicGacha,#premiumGacha{
             display:none;
           }
+         
+         
 
         .title {
             text-align: left;
@@ -269,7 +279,7 @@
             background-color: #ff8800;
             border: none;
             color: #fff;
-            padding: 7px 17px;
+            padding: 15px ;
             width: 200px;
             text-align: center;
             transition-duration: 0.4s;

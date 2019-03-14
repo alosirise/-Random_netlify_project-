@@ -8,6 +8,8 @@ $(function () {
     $("#seeAll").click(function () {
         console.log('Get Data . . .');
         $("#datalist").toggle("slow");
+        $("#basicGacha").slideToggle("slow");
+        $("#premiumGacha").slideToggle("slow");
     });
 
     $("#clear").click(function () {
@@ -37,9 +39,6 @@ $(function () {
 
     $('#touch').click(function () {
 
-        $("#touch").hide();
-        $("#reset").show();
-       
         var rdm = getRandomInt2(1, 100);  // 100 num
         console.log("Chance 1-100%=" + rdm);
 
@@ -56,25 +55,30 @@ $(function () {
                 rdm_SSR();
                 alert("Congratulations !! \n You Got SSR ! in basic rate");
             }
+            $("#touch").hide();
+            $("#reset").show();
         }
         else if (rate == 2) {
             if (rdm <= 35) { //35%
                 console.log('R premium');
-                rdm_R(rdm);              
+                rdm_R(rdm);
             } else if (rdm <= 70) { //35%
                 console.log('SR premium');
                 rdm_SR();
-               
+
             } else { //30%
                 console.log('SSR Premium');
                 rdm_SSR();
                 alert("Congratulations !! \n You Got SSR ! in premium rate");
             }
+            $("#touch").hide();
+            $("#reset").show();
         } else {
             alert("\n Please select rate !\n\n  เลือก RATE ก่อนนะจ้ะ");
         }
         $(function () { $("picture").hide().fadeIn(2700) });
         $(function () { $("picture2").hide().fadeIn(3300) });
+
     });
 
     $('#reset').click(function () {
@@ -98,7 +102,7 @@ $(function () {
         $.get("GBF.json", function (data, status) {
             var products = data.Search;
             var product = products[R_roll];
-            
+
             $('#answer').attr('src', product.Character_image0);
             $('#answer2').attr('src', product.Character_image2);
             $('#answer3').attr('src', product.Character_image1);
@@ -165,7 +169,7 @@ $(function () {
             $("#save").append('<li>' + product.Name + ' [ SSR ! ]' + '</li>');
             $("#clear").show();
             $("#detail").show();
-            
+
             var tableHead = '<tr> <th>Character</th> <th>Rarity</th> <th>Specialty</th>  <th>Style</td> <th>Name</th> <th>Gender</th> </tr>'
             $('#datalist2').append(tableHead);
             var tableRow = '<tr>  <td>' + '<img class ="imgtable" src= ' + product.Character_image2 + '> ' + '</td>  <td>' + ' <img class ="imgtable" src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img class ="imgtable" src= ' + product.Specialty + '> ' + '</td><td>' + '<img class ="imgtable" src= ' + product.Style
