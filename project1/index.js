@@ -2,11 +2,21 @@ $(function () {
 
     document.getElementById('reset').style.visibility = 'hidden';
     document.getElementById('detail').style.visibility = 'hidden';
-    $(function () { $("h1").hide().fadeIn(2000) });    
+    document.getElementById('clear').style.visibility = 'hidden';
+    $(function () { $("h1").hide().fadeIn(2000) });
     $(function () { $("#gachapic").hide().fadeIn(2000) });
 
+    $("#seeAll").click(function () {
+        console.log('Get Data . . .');
+        $("#datalist").toggle("slow");
+    });
+    
+    $("#clear").click(function(){
+        $("#save").empty();
+        document.getElementById('clear').style.visibility = 'hidden';
+      });
+
     $.get("GBF.json", function (data, status) {
-        console.log(data);
         console.log(status);
         if (status == 'success') {
             var products = data.Search;
@@ -20,68 +30,75 @@ $(function () {
                 $('#datalist').append(tableRow);
                 console.log(product);
             }
-            
         }
     });
 
-
-        function test(s){
-            
+        function getRandomInt2(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-
-function test2(){}
-
-
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * Math.floor(max));
-    }
-
-    function getRandomInt2(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
+         
     $('#touch').click(function () {
-        
+
         document.getElementById('touch').style.visibility = 'hidden';
         document.getElementById('reset').style.visibility = 'visible';
         document.getElementById('detail').style.visibility = 'visible';
-        var rdm = getRandomInt(99);  // 100 num
-        console.log(rdm);
+        document.getElementById('clear').style.visibility = 'visible';
+        var rdm = getRandomInt2(1, 100);  // 100 num
+        console.log("Chance 1-100%=" + rdm);
+        var e = document.getElementById("selectRate");
+        var rate = e.options[e.selectedIndex].value;
 
-        if (rdm <= 34) { //35 num = 35%
-            console.log('R');
-            rdm_R(rdm);
-        } else if (rdm <= 69) { //35 num = 35%
-            console.log('SR');
-            rdm_SR();
-        } else { //30 num  =30%
-            console.log('SSR');
-            rdm_SSR();
+        if (rate == 1) {
+            if (rdm <= 55) { //55%
+                console.log('R basic');
+                rdm_R(rdm);
+            } else if (rdm <= 90) { //35%
+                console.log('SR basic');
+                rdm_SR();
+            } else { // 10%
+                console.log('SSR basic');
+                rdm_SSR();
+                alert("Congratulations !! \n You Got SSR ! in basic rate");
+            }
         }
-
+        else if (rate == 2) {
+            if (rdm <= 35) { //35%
+                console.log('R premium');
+                rdm_R(rdm);
+            } else if (rdm <= 70) { //35%
+                console.log('SR premium');
+                rdm_SR();
+            } else { //30%
+                console.log('SSR Premium');
+                rdm_SSR();
+                alert("Congratulations !! \n You Got SSR ! in premium rate");
+            }
+        } else {
+            alert("Please select rate !");
+        }
         $(function () { $("picture").hide().fadeIn(2700) });
-        $(function () { $("picture2").hide().fadeIn(3500) });
-
+        $(function () { $("picture2").hide().fadeIn(3300) });        
     });
+
 
     $('#reset').click(function () {
         document.getElementById('touch').style.visibility = 'visible';
-        document.getElementById('reset').style.visibility = 'hidden';
-
+        document.getElementById('reset').style.visibility = 'hidden'; 
         document.getElementById("touch").disabled = false;
-      //  document.getElementById("answer").src = "https://stamp.archsted.com/storage/stamps/ZvJ7tQ4e8jF8FDiRf6dLCkOmzTLnPCsSTgjlkR2T.gif"
-        document.getElementById("answer2").src = "Grandblue_project/tranparant.png";
-
-        $('#answer').attr('src','https://stamp.archsted.com/storage/stamps/ZvJ7tQ4e8jF8FDiRf6dLCkOmzTLnPCsSTgjlkR2T.gif');
+        // document.getElementById("answer").src = "https://stamp.archsted.com/storage/stamps/ZvJ7tQ4e8jF8FDiRf6dLCkOmzTLnPCsSTgjlkR2T.gif"
+        //document.getElementById("answer2").src = "";
+        //  document.getElementById("answer3").src = ""
         // document.getElementById("name").innerHTML = ""
         // document.getElementById("detail").innerHTML = ""
-        // document.getElementById("datalist").src = ""
-
-        $('#detail').empty();
-        document.getElementById("answer3").src = ""
+        // document.getElementById("datalist").src = ""  
+        $('#answer').attr('src', 'https://stamp.archsted.com/storage/stamps/ZvJ7tQ4e8jF8FDiRf6dLCkOmzTLnPCsSTgjlkR2T.gif');
+        $('#answer2').attr('src','');
+        $('#answer3').attr('src','');
         $('#name').empty();
+        $('#detail').empty();
         $('#datalist2').empty();
     });
+
 
     function rdm_R(rdm) {
         var R_roll = getRandomInt2(13, 19);
@@ -96,7 +113,6 @@ function test2(){}
         //     "Grandblue_project/R_50.png",
         //     "Grandblue_project/R_60.png"
         // ];
-
 
         // var R_smallpic = [
         //     "Grandblue_project/R_02.png",
@@ -115,19 +131,22 @@ function test2(){}
         $.get("GBF.json", function (data, status) {
             var products = data.Search;
             var product = products[R_roll];
-            document.getElementById("answer").src = product.Character_image0
-            document.getElementById("answer2").src = product.Character_image2
-            document.getElementById("answer3").src = product.Character_image1
-        
+            // document.getElementById("answer").src = product.Character_image0
+            // document.getElementById("answer2").src = product.Character_image2
+            // document.getElementById("answer3").src = product.Character_image1
             //document.getElementById("name").innerHTML = product.Name
             //document.getElementById("detail").innerHTML = product.Detail
-            
-            $('#name').text(product.Name);    
-            $('#detail').text(product.Detail);   
+
+            $('#answer').attr('src',product.Character_image0);
+            $('#answer2').attr('src',product.Character_image2);
+            $('#answer3').attr('src',product.Character_image1);
+            $('#name').text(product.Name);
+            $('#detail').text(product.Detail);
+            $("#save").append('<li>'+product.Name+' [ R ]'+'</li>');
 
             var tableHead = '<tr> <th>Character</th> <th>Rarity</th> <th>Specialty</th>  <th>Style</td> <th>Name</th> <th>Gender</th> </tr>'
             $('#datalist2').append(tableHead);
-            var tableRow = '<tr>  <td>' + '<img src= ' + product.Character_image2 + '> ' + '</td>  <td>' + '<img src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img src= ' + product.Specialty + '> ' + '</td><td>' + '<img src= ' + product.Style
+            var tableRow = '<tr>  <td>' + '<img class ="imgtable" src= ' + product.Character_image2 + '> ' + '</td>  <td>' + ' <img class ="imgtable" src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img class ="imgtable" src= ' + product.Specialty + '> ' + '</td><td>' + '<img class ="imgtable" src= ' + product.Style
                 + '> ' + '</td> <td>' + product.Name + '</td> <td>' + product.Gender + '</td> </tr>'
 
             $('#datalist2').append(tableRow);
@@ -136,48 +155,25 @@ function test2(){}
     }
 
 
+
     function rdm_SR(rdm) {
         var SR_roll = getRandomInt2(6, 12);
         console.log('SR_Roll = ' + SR_roll);
 
-        // var SR_character = [
-        //     "Grandblue_project/SR_00.png",
-        //     "Grandblue_project/SR_10.png",
-        //     "Grandblue_project/SR_20.png",
-        //     "Grandblue_project/SR_30.png",
-        //     "Grandblue_project/SR_40.png",
-        //     "Grandblue_project/SR_50.png",
-        //     "Grandblue_project/SR_60.png"
-        // ];
-
-        // var SR_smallpic = [
-        //     "Grandblue_project/SR_02.png",
-        //     "Grandblue_project/SR_12.png",
-        //     "Grandblue_project/SR_22.png",
-        //     "Grandblue_project/SR_32.png",
-        //     "Grandblue_project/SR_42.png",
-        //     "Grandblue_project/SR_52.png",
-        //     "Grandblue_project/SR_62.png"
-        // ];
-        // document.getElementById("answer").src = SR_character[SR_roll]
-        // document.getElementById("answer2").src = SR_smallpic[SR_roll]
-        // console.log(SR_character[SR_roll])
-
         $.get("GBF.json", function (data, status) {
             var products = data.Search;
             var product = products[SR_roll];
-            document.getElementById("answer").src = product.Character_image0
-            document.getElementById("answer2").src = product.Character_image2
-            document.getElementById("answer3").src = product.Character_image1
-            // document.getElementById("name").innerHTML = product.Name
-            // document.getElementById("detail").innerHTML = product.Detail
-                  
-            $('#name').text(product.Name);    
-            $('#detail').text(product.Detail); 
+
+            $('#answer').attr('src',product.Character_image0);
+            $('#answer2').attr('src',product.Character_image2);
+            $('#answer3').attr('src',product.Character_image1);
+            $('#name').text(product.Name);
+            $('#detail').text(product.Detail);
+            $("#save").append('<li>'+product.Name+' [ SR ]'+'</li>');
 
             var tableHead = '<tr> <th>Character</th> <th>Rarity</th> <th>Specialty</th>  <th>Style</td> <th>Name</th> <th>Gender</th> </tr>'
             $('#datalist2').append(tableHead);
-            var tableRow = '<tr>  <td>' + '<img src= ' + product.Character_image2 + '> ' + '</td>  <td>' + '<img src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img src= ' + product.Specialty + '> ' + '</td><td>' + '<img src= ' + product.Style
+            var tableRow = '<tr>  <td>' + '<img class ="imgtable" src= ' + product.Character_image2 + '> ' + '</td>  <td>' + ' <img class ="imgtable" src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img class ="imgtable" src= ' + product.Specialty + '> ' + '</td><td>' + '<img class ="imgtable" src= ' + product.Style
                 + '> ' + '</td> <td>' + product.Name + '</td> <td>' + product.Gender + '</td> </tr>'
 
             $('#datalist2').append(tableRow);
@@ -186,44 +182,25 @@ function test2(){}
     }
 
 
+
     function rdm_SSR(rdm) {
         var SSR_roll = getRandomInt2(0, 5);
         console.log('SSR_Roll = ' + SSR_roll);
 
-        // var SSR_character = [
-        //     "Grandblue_project/SSR_00.png",
-        //     "Grandblue_project/SSR_10.png",
-        //     "Grandblue_project/SSR_20.png",
-        //     "Grandblue_project/SSR_30.png",
-        //     "Grandblue_project/SSR_40.png",
-        //     "Grandblue_project/SSR_50.png",
-        //     "Grandblue_project/SSR_60.png"
-        // ];
-        // var SSR_smallpic = [
-        //     "Grandblue_project/SSR_02.png",
-        //     "Grandblue_project/SSR_12.png",
-        //     "Grandblue_project/SSR_22.png",
-        //     "Grandblue_project/SSR_32.png",
-        //     "Grandblue_project/SSR_42.png",
-        //     "Grandblue_project/SSR_52.png",
-        //     "Grandblue_project/SSR_62.png"
-        // ];
-
         $.get("GBF.json", function (data, status) {
             var products = data.Search;
             var product = products[SSR_roll];
-            document.getElementById("answer").src = product.Character_image0
-            document.getElementById("answer2").src = product.Character_image2
-            document.getElementById("answer3").src = product.Character_image1
-            // document.getElementById("name").innerHTML = product.Name
-            // document.getElementById("detail").innerHTML = product.Detail
-                  
-            $('#name').text(product.Name);    
-            $('#detail').text(product.Detail); 
+            
+            $('#answer').attr('src',product.Character_image0);
+            $('#answer2').attr('src',product.Character_image2);
+            $('#answer3').attr('src',product.Character_image1);
+            $('#name').text(product.Name);
+            $('#detail').text(product.Detail);
+            $("#save").append('<li>'+product.Name+' [ SSR ! ]'+'</li>');
 
             var tableHead = '<tr> <th>Character</th> <th>Rarity</th> <th>Specialty</th>  <th>Style</td> <th>Name</th> <th>Gender</th> </tr>'
             $('#datalist2').append(tableHead);
-            var tableRow = '<tr>  <td>' + '<img src= ' + product.Character_image2 + '> ' + '</td>  <td>' + '<img src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img src= ' + product.Specialty + '> ' + '</td><td>' + '<img src= ' + product.Style
+            var tableRow = '<tr>  <td>' + '<img class ="imgtable" src= ' + product.Character_image2 + '> ' + '</td>  <td>' + ' <img class ="imgtable" src= ' + product.Rarity + '> ' + '</td>  <td>' + '<img class ="imgtable" src= ' + product.Specialty + '> ' + '</td><td>' + '<img class ="imgtable" src= ' + product.Style
                 + '> ' + '</td> <td>' + product.Name + '</td> <td>' + product.Gender + '</td> </tr>'
 
             $('#datalist2').append(tableRow);
@@ -231,8 +208,4 @@ function test2(){}
         return SSR_roll;
     }
 
-    $("#seeAll").click(function () {
-        console.log('Get Data . . .');
-        $("#datalist").toggle("slow");
-    });
 });

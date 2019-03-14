@@ -7,74 +7,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grandblue simulator</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Grandblue_project/logo1.png" type="image/png">
 </head>
 
 <body>
 
-    <div class = "col-12">
+    <div class="col-12">
         <h1 class="headpic title" id="headpic">Grandblue Fantasy<br>
             [Rolling simulator]</h1>
     </div>
 
 
-    <div class="itemmid col-12"><br>
+    <div class="itemmid"><br>
 
         <div class="">
             <img src="Grandblue_project/gacha.jpg" class="zoom infopic " id="gachapic"><br><br>
         </div>
 
-        <div class="title3 center boxwhite itemmid" id="rategacha"><br>***RATE OF GACHA***
-            <li>SSR = 30%</li>
-            <li>SR = 35%</li>
-            <li>R = 35%</li><br>
+        <div class="title3 center boxwhite itemmid" id="rategacha"><br>
+            ***RATE OF GACHA*** <br>
+            <li>SSR = 10% </li>
+            <li>SR = 35% </li>
+            <li>R = 55% </li><br>
         </div><br><br>
 
         <button class="title3" id="seeAll">Character list </button><br><br>
-      
 
-        <div class="col-12"id='datalist'></div><br>
-    
+        <div class="tableres" id='datalist'></div><br>
+
+        <div>
+            <select id="selectRate">
+                <option value="0" selected="selected">Select Gacha Rate </option>
+                <option value="1">Basic rate</option>
+                <option value="2">Premium rate</option>
+            </select>
+        </div><br><br>
+
         <picture>
+            <img id="answer2" src=""><br><br>
 
-            <img id="answer2" width="10%" src=""><br><br>
-           
             <img id="answer"
                 src="https://stamp.archsted.com/storage/stamps/ZvJ7tQ4e8jF8FDiRf6dLCkOmzTLnPCsSTgjlkR2T.gif"
-                class="zoom"><br><br>
-
+                class="zoom crystalpic"><br><br>
         </picture>
 
         <div>
             <button id="touch" class="title3 ">Touch ! ลองสุ่มเลยย </button><br><br>
             <button id="reset" class="title3 ">Try Again ! ขอลองอีกรอบซิ </button>
+        </div><br>
+
+
+
+        <div class="container ">
+            <div class="col-4  ">
+            </div>
+
+            <div class="col-4 itemmid">
+                <div class="title3 center boxwhite detailcenter" id="save"></div>
+            </div>
+
+            <div class="col-4 title">
+                    <button id="clear">Clear history</button>
+                </div>
+            </div>
         </div>
 
 
-        <!-- <img id="answer" src ="Grandblue_project/.jpg"> -->
-
-    </div><br>
-
-    <div class="container ">
+        <div class="container ">
             <div class="col-5 itemmid ">
-                    <picture2>
-                        <div class="center" id ="name"></div> <br>   
+                <picture2>
+                    <div class="center" id="name"></div> <br>
 
-                        <img width="90%" src="" id="answer3">
-                    </picture2><br>
-                
+                    <img width="90%" src="" id="answer3">
+                </picture2><br>
             </div>
-    
-            <div class="col-6 itemmid">
-                    <div class="title3 Rcol-1" ></div>
-                    <div class="title3 Rcol-5" >
-                            <div class ="table" id ="datalist2"></div>
 
-                    </div>
-                    <div class="title3 detailcenter boxwhite itemmid" id="detail">
-                    </div>
+            <div class="col-7 itemmid">
+                <div class=" Rcol-1"></div>
+                <div class="tableres" id="datalist2"></div>
+
+                <div class="Rcol-1"></div>
+                <div class="title3 detailcenter boxwhite itemmid " id="detail"></div>
             </div>
         </div>
 
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
