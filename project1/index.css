@@ -33,9 +33,9 @@
             box-sizing: border-box;
             
         }
-        div{
+        /* div{
             border : 1px solid red;
-        }
+        } */
         .col-1 {
             width: 8.33%;
         }
